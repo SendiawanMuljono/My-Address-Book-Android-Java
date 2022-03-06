@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".fragments.AddressBookAdapter">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/ivBookEmpPicture"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:src="@color/black"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvBookEmpName"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvBookEmpCity"
+                android:text="City: "
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/btnCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Call"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#d5d5d5"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/btnEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Email"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#d5d5d5" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
